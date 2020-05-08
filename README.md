@@ -8,11 +8,12 @@ stages:
   - package
 
 docker-build:
-  image: docker:19.03.8
+  image: visavis2k/docker-compose-dind:19.03.8
   stage: package
   services:
-    - visavis2k/docker-compose-dind:19.03.8-dind
+    - docker:19.03.8-dind
   before_script:
     - docker-compose version
   script:
     - docker-compose build
+
