@@ -1,4 +1,4 @@
-FROM docker:19.03.8
+FROM docker:19.03.8-dind
 
 # install dependencies for docker-compose according to 
 #   https://docs.docker.com/compose/install/#alternative-install-options
